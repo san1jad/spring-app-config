@@ -6,3 +6,10 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8076/eureka}
+      
+management:
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0
+
