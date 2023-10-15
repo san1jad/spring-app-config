@@ -8,7 +8,11 @@ eureka:
       defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8076/eureka}
       
 management:
+ endpoints:
+    web:
+      exposure:
+        include: '*' 
   tracing:
-    enabled: true
     sampling:
       probability: 1.0
+ 
