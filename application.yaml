@@ -30,5 +30,23 @@ okta:
   oauth2:
     issuer: https://dev-36592237.okta.com/oauth2/default
     audience: api://default
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-36592237.okta.com/oauth2/default
+      client:
+        registration:
+          internal-client:
+            provider: okta
+            authorization-grant-type: client_credentials
+            scope: internal
+            client-id: 0oacv28sym7cFitTr5d7
+            client-secret: N4Rq3keNF9Q43Nq5eH-_Sg9ladr8dq2_Ay5M-_K6tqZngHWXhImqB3kweSWnuW1o
+        provider:
+          okta:
+            issuer-uri: https://dev-36592237.okta.com/oauth2/default
             
 
