@@ -25,5 +25,10 @@ management:
         http:
           server:
             requestes: true
+
+okta:
+  oauth2:
+    issuer: https://dev-36592237.okta.com/oauth2/default
+    audience: api://default
             
 
